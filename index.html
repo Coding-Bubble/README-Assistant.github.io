@@ -65,16 +65,16 @@
             var photo_url = document.getElementById("photo_url")
             var project_description = document.getElementById("project_description")
             const heading = `
-* &lta href="#${project_name.value}"&gt&lt/a&gt
+* &lta href="#${project_name.value}"&gt${project_name.value}&lt/a&gt
 <br><br>
 &lth3 id="${project_name.value}"&gt${project_name.value}&lt/h3&gt
-<br>
-&ltimg src="${photo_url.value}"&gt
-<br>
+<br><br>
+![](${photo_url.value})
+<br><br>
 ${project_description.value}
-<br>
+<br><br>
 Developed by: [${developer_name.value}](${developer_profile_url.value})
-<br>
+<br><br>
 &ltbr&gtClick &lta href="${project_url.value}" target="_blank"&gthere&lt/a&gt to see the repository 
 `
             document.getElementById("text_area").innerHTML = heading
